@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Ropa - TG Center</title>
+    
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="icon" href="./img/logo sin fondo.png">
+</head>
+<body>
+
+<header>
+    <h1>Catálogo</h1>
+    <p>Disponible para entrega en puntos medio de Santa Fe</p>
+</header>
+
+<div class="filtros">
+    <input type="text" id="buscador" placeholder="Buscar prenda...">
+    <select id="filtro-cat">
+        <option value="todas">Todas las categorías</option>
+        <!--<option value="playeras">Playeras</option>-->
+        <!--<option value="pantalones">Pantalones</option>-->
+        <option value="vestidos">Vestidos</option>
+        <!--<option value="accesorios">Accesorios</option>-->
+        <option value="videojuegos">Juegos y Controles</option>
+    </select>
+</div>
+
+<div class="contenedor-catalogo" id="catalogo"></div>
+
+<!-- Ventana de detalles -->
+<div class="modal" id="modal">
+    <div class="contenido-modal">
+        <span class="cerrar">&times;</span>
+        <img class="modal-img" id="modal-img" src="">
+        <h2 id="modal-nombre"></h2>
+        <p class="precio" id="modal-precio"></p>
+        <p id="modal-descripcion"></p>
+        <br>
+        <p><strong>Tallas disponibles:</strong> <span id="modal-tallas"></span></p>
+    </div>
+</div>
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>
