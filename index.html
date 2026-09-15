@@ -1,48 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Ropa - TG Center</title>
-    
+    <title>Catálogo - F.A. Center</title>
+
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/wolf.css">
     <link rel="icon" href="./img/logo sin fondo.png">
 </head>
+
 <body>
 
-<header>
-    <h1>Catálogo</h1>
-    <p>Disponible para entrega en puntos medio de Santa Fe</p>
-</header>
+    <header>
+        <h3>Contactame en Whassapp</h3>
+        <a href="http://wa.me/5216646696060" target="_blank">Clic Aqu&#237;</a>
+    </header>
 
-<div class="filtros">
-    <input type="text" id="buscador" placeholder="Buscar prenda...">
-    <select id="filtro-cat">
-        <option value="todas">Todas las categorías</option>
-        <!--<option value="playeras">Playeras</option>-->
-        <!--<option value="pantalones">Pantalones</option>-->
-        <option value="vestidos">Vestidos</option>
-        <!--<option value="accesorios">Accesorios</option>-->
-        <option value="videojuegos">Juegos y Controles</option>
-    </select>
-</div>
+    <section class="hero">
+        <h1 class="display-1">F.A. Center</h1>
+        <p>"Tu estilo, tu juego, tu colecci&#243;n"</p>
+        <a href="./catalogo.html" class="btn btn-primary mt-4" style="z-index: 1; width: 50%;">Ver Catalogo</a>
+    </section>
 
-<div class="contenedor-catalogo" id="catalogo"></div>
+    <main class="contenedor-m">
+        <h1 class="display-3 mb-4">Horario</h1>
+        
+        <hr class="style-2">
 
-<!-- Ventana de detalles -->
-<div class="modal" id="modal">
-    <div class="contenido-modal">
-        <span class="cerrar">&times;</span>
-        <img class="modal-img" id="modal-img" src="">
-        <h2 id="modal-nombre"></h2>
-        <p class="precio" id="modal-precio"></p>
-        <p id="modal-descripcion"></p>
-        <br>
-        <p><strong>Tallas disponibles:</strong> <span id="modal-tallas"></span></p>
-    </div>
-</div>
+        <p style="font-size: 1.2em;" class="mb-8 mt-4">Al numero que nos puedes marcar al 6646696060 o envía un correo a ninjadiaz9@gmail.com</p>
+        <p class="mb-4">Viernes y Lunes: 10:00-17:30</p>
+        <p class="mb-4">Sábado y Domingo : 10:00-19:00</p>
+        <p class="mb-8">Martes, Miercoles y Jueves: cerrado</p>
 
-<script src="./js/index.js"></script>
+        <h2>Visítanos</h2>
+        <hr class="style-2">
+        <p style="font-size: 1.1em;">Estamos en el Swap meet Las Carpas - Santa Fe en el segundo pasillo en el local E14</p>
+        <p></p>
+        <section>
+            <div id="map" class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.1336248891994!2d-117.04097882498097!3d32.44235787380534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d936fb7f98781b%3A0x78c596fb1eadc7db!2sSwap%20meet%20Las%20Carpas%20-%20Santa%20Fe!5e0!3m2!1ses!2smx!4v1789453238648!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
 
+        <a href="./catalogo.html" target="_blank" class="btn-dark btn">Ver Catalogo</a>
+    </main>
+
+    <footer class="pie-pagina">Para contactar con un asesor de ventas, llama al 6646696060  o envía un correo a [ninjadiaz9@gmail.com]</footer>
+
+    <script src="./js/mapa.js"></script>
 </body>
+
 </html>

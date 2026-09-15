@@ -33,7 +33,7 @@ const prendas = [
         precio: 250,
         categoria: "vestidos",
         imagen: "./img/v2.jpg",
-        descripcion: "Tela fresca, ideal para un evento.",
+        descripcion: "Color morado liso.",
         tallas: "L"
     },
     {
@@ -188,7 +188,7 @@ function abrirModal(item) {
     document.getElementById('modal-descripcion').textContent = item.descripcion;
     document.getElementById('modal-tallas').textContent = item.tallas;
 
-    // ✅ Aplicar estilo ESPECIAL solo si es id=7
+    // ✅ Aplicar estilo ESPECIAL solo al apatado de vestidos
     if(item.id === 2){
         modalImg.style.width = '60%';
         modalImg.style.height = '330px';
