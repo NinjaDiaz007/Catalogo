@@ -27,7 +27,7 @@ const prendas = [
         descripcion: "Tela fresca, ideal para el día y la talla viene reducida.",
         tallas: "XL"
     },
-    {
+    /*{
         id: 4,
         nombre: "Vestido Morado",
         precio: 250,
@@ -35,7 +35,7 @@ const prendas = [
         imagen: "./img/v2.jpg",
         descripcion: "Color morado liso.",
         tallas: "L"
-    },
+    },*/
     {
         id: 5,
         nombre: "Vestido Gris Con Rayas",
@@ -125,8 +125,8 @@ const prendas = [
         imagen: "./img/v11.jpg",
         descripcion: "Vestido nuevo pero viene reducido.",
         tallas: "L"
-    },
-    {
+    }
+    /*{
         id: 15,
         nombre: "Vestido Vino",
         precio: 300,
@@ -134,7 +134,7 @@ const prendas = [
         imagen: "./img/v12.jpg",
         descripcion: "Vestido vino para eventos o fiestas.",
         tallas: "L"
-    }
+    }*/
 ];
 
 const contenedor = document.getElementById('catalogo');
