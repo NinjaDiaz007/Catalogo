@@ -13,50 +13,76 @@
 
 <body>
 
-    <header class="promo">
-        <h3>Contactame en Whassapp</h3>
-        <a href="http://wa.me/5216646696060" target="_blank" class="btn btn-dark-border ml-4">Clic Aqu&#237;</a>
+    <header>
+        <h1>Catálogo</h1>
+        <p>Disponible para entrega en puntos medio de Santa Fe</p>
     </header>
 
-    <section class="hero">
-        <h1 class="display-1">F.A. Center</h1>
-        <p>"Tu estilo, tu juego, tu colecci&#243;n"</p>
-        <a href="./catalogo.html" class="btn btn-azul mt-4" style="z-index: 1; width: 50%;">Ver Catalogo</a>
+    <div class="filtros">
+        <input type="text" id="buscador" placeholder="Buscar prenda...">
+        <select id="filtro-cat">
+            <option value="todas">Todas las categorías</option>
+            <!--<option value="playeras">Playeras</option>-->
+            <!--<option value="pantalones">Pantalones</option>-->
+            <option value="vestidos">Vestidos</option>
+            <!--<option value="accesorios">Accesorios</option>-->
+            <option value="videojuegos">Juegos y Controles</option>
+        </select>
+    </div>
+
+    <div class="contenedor-catalogo" id="catalogo"></div>
+
+    <!-- Ventana de detalles -->
+    <div class="modal" id="modal">
+        <div class="contenido-modal">
+            <span class="cerrar">&times;</span>
+            <img class="modal-img" id="modal-img" src="">
+            <h2 id="modal-nombre"></h2>
+            <p class="precio" id="modal-precio"></p>
+            <p id="modal-descripcion"></p>
+            <br>
+            <p><strong>Tallas disponibles:</strong> <span id="modal-tallas"></span></p>
+        </div>
+    </div>
+
+    <footer class="pie-pagina">
+        Para contactar con un asesor de ventas, manda un mensaje por whatsapp a <a href="http://wa.me/5216646696060"
+            class="btn-azul-text">6647161673</a> o envía un correo a <span class="span-azul">ninjadiaz9@gmail.com</span>        
+    </footer>
+
+    <section class="redes-sociales mr-2">
+        <a title="Whatsapp" href="http://wa.me/5216647161673">
+            <img src="./img/whatsapp.svg" class="whatsapp" alt="">
+        </a>
+        <a title="Facebook" href="http://www.facebook.com">
+            <img src="./img/facebook.svg" class="facebook" alt="">
+        </a>
     </section>
 
-    <main class="contenedor-m">
-        <h1 class="display-2 mb-4">Horario</h1>
-        
-        <hr class="style-2">
+    <section style="display: none;">
+        <h1 class="display-2 mb-4" style="margin-top: 8.5em;">Horario</h1>
 
-        <p style="font-size: 1.2em;" class="mb-8 mt-4">Al numero que nos puedes marcar al 6646696060 o envía un correo a ninjadiaz9@gmail.com</p>
+        <hr class="style-3">
+
+        <p style="font-size: 1.2em;" class="mb-8 mt-2">Al numero que nos puedes marcar al 6646696060 o envía un
+            correo a ninjadiaz9@gmail.com</p>
         <p class="mb-4">Viernes y Lunes: 10:00-17:30</p>
         <p class="mb-4">Sábado y Domingo : 10:00-19:00</p>
         <p class="mb-8">Martes, Miercoles y Jueves: cerrado</p>
 
-        <h2 class="display-2 mb-4">Visítanos</h2>
-        <hr class="style-2">
-        <p class="font-26">Estamos en el Swap meet Las Carpas - Santa Fe en el segundo pasillo en el local E14</p>
-        <p></p>
-        <section>
-            <div id="map" class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.1336248891994!2d-117.04097882498097!3d32.44235787380534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d936fb7f98781b%3A0x78c596fb1eadc7db!2sSwap%20meet%20Las%20Carpas%20-%20Santa%20Fe!5e0!3m2!1ses!2smx!4v1789453238648!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-            </div>
-        </section>
-
-        <a href="./catalogo.html" class="btn-dark btn">Ver Catalogo</a>
-    </main>
-
-    <footer class="pie-pagina">
-        Para contactar con un asesor de ventas, llama al <a href="http://wa.me/5216646696060" class="btn-azul-text">6646696060</a> o envía un correo a <span class="span-azul">ninjadiaz9@gmail.com</span>
-    </footer>
-
-    <section class="redes-sociales">
-        <a title="Whassapp" href="http://wa.me/5216646696060">W</a>
-        <a title="Facebook" href="http://www.facebook.com">F</a>
+        <div class="flexbox-c">
+                    <h2 class="display-3 mb-2 mt-4">Visítanos</h2>
+                    <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3367.1336248891994!2d-117.04097882498097!3d32.44235787380534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d936fb7f98781b%3A0x78c596fb1eadc7db!2sSwap%20meet%20Las%20Carpas%20-%20Santa%20Fe!5e0!3m2!1ses!2smx!4v1789453238648!5m2!1ses!2smx"
+                style="border:0;" class="mapa" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+                    <p class="mt-5 ml-4 mr-4">Estamos en el Swap meet Las Carpas - Santa Fe en el segundo pasillo en el local E14</p>
+                </div>
     </section>
 
-    <script src="./js/mapa.js"></script>
+    <script src="./js/index.js"></script>
+
 </body>
 
 </html>

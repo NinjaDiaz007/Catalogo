@@ -61,7 +61,7 @@ hr.style-3 {
 	border: 0;
 	height: 0;
 	border-top: 1px dashed #999;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -131,6 +131,12 @@ button:-moz-focusring,
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.flexbox-c{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .none {
@@ -1077,6 +1083,9 @@ h6 {
 .font-26{
 	font-size: 26px;
 }
+.font-30{
+	font-size: 30px;
+}
 /*=============================================*/
 
 /*=============================================*/
@@ -1086,9 +1095,28 @@ h6 {
 	color: var(--azul);
 }
 /*=============================================*/
+
 /*=============================================*/
+/*=======> Color de las Redes Sociales <=======*/
 /*=============================================*/
-/*=============================================*/
+.whatsapp{
+	filter: brightness(0) saturate(100%) invert(95%) sepia(83%) saturate(6863%) hue-rotate(64deg) brightness(86%) contrast(91%);
+}
+.whatsapp:hover{
+	filter: brightness(0) saturate(100%) invert(27%) sepia(69%) saturate(522%) hue-rotate(124deg) brightness(94%) contrast(97%);
+}
+.facebook{
+	filter: brightness(0) saturate(100%) invert(31%) sepia(39%) saturate(1065%) hue-rotate(184deg) brightness(89%) contrast(81%);
+}
+.facebook:hover{
+	filter: brightness(0) saturate(100%) invert(27%) sepia(7%) saturate(4110%) hue-rotate(183deg) brightness(88%) contrast(83%);
+}
+.location{
+	filter: brightness(0) saturate(100%) invert(17%) sepia(43%) saturate(31%) hue-rotate(332deg) brightness(104%) contrast(99%);
+}
+.location:hover{
+	filter: brightness(0) saturate(100%) invert(40%) sepia(17%) saturate(21%) hue-rotate(2deg) brightness(95%) contrast(89%);
+}
 /*=============================================*/
 /*=============================================*/
 /*=============================================*/

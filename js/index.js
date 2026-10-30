@@ -1,14 +1,14 @@
 // Datos de ejemplo - aquí puedes agregar tus prendas
 const prendas = [
-    /*{
+    {
         id: 1,
-        nombre: "Playera Básica Blanca",
-        precio: 199,
-        categoria: "playeras",
-        imagen: "https://via.placeholder.com/400x500/ffffff/222222?text=Playera+Blanca",
-        descripcion: "100% algodón, suave y resistente.",
-        tallas: "S, M, L, XL"
-    },*/
+        nombre: "Control Inalambrico Nintendo Switch y PC",
+        precio: 350,
+        categoria: "videojuegos",
+        imagen: "./img/control2.jpg",
+        descripcion: "Batería de larga duración, compatible con switch 1 y 2, android y pc, nuevo sellado.",
+        tallas: "Única"
+    },
     {
         id: 2,
         nombre: "Vestido Rallado",
@@ -27,15 +27,15 @@ const prendas = [
         descripcion: "Tela fresca, ideal para el día y la talla viene reducida.",
         tallas: "XL"
     },
-    /*{
+    {
         id: 4,
-        nombre: "Vestido Morado",
+        nombre: "Control Universal Inalambrico",
         precio: 250,
-        categoria: "vestidos",
-        imagen: "./img/v2.jpg",
-        descripcion: "Color morado liso.",
-        tallas: "L"
-    },*/
+        categoria: "videojuegos",
+        imagen: "./img/control3.jpg",
+        descripcion: "Batería de larga duración, compatible con switch 1 y 2, android, iphone, xbox, playstation y pc, nuevo sellado.",
+        tallas: "Única"
+    },
     {
         id: 5,
         nombre: "Vestido Gris Con Rayas",
@@ -50,14 +50,14 @@ const prendas = [
         nombre: "Control Inalambrico Nintendo Switch",
         precio: 350,
         categoria: "videojuegos",
-        imagen: "./img/Control1.png",
+        imagen: "./img/control1.jpg",
         descripcion: "Batería de larga duración, compatible con switch 1 y 2, android y pc, nuevo sellado.",
         tallas: "Única"
     },
     {
         id: 7,
         nombre: "Juego Immortals Fenyx Rising",
-        precio: 1000,
+        precio: 800,
         categoria: "videojuegos",
         imagen: "./img/AU84A.jpg",
         descripcion: "Para Nintendo Switch.",
@@ -75,7 +75,7 @@ const prendas = [
     {
         id: 9,
         nombre: "Vestido Negro Floreado",
-        precio: 150,
+        precio: 80,
         categoria: "vestidos" || "playera",
         imagen: "./img/v6.jpg",
         descripcion: "Vestido o Blusa.",
@@ -84,7 +84,7 @@ const prendas = [
     {
         id: 10,
         nombre: "Vestido Blanco",
-        precio: 150,
+        precio: 120,
         categoria: "vestidos",
         imagen: "./img/v7.jpg",
         descripcion: "El vestido blanco para niñas.",
@@ -111,7 +111,7 @@ const prendas = [
     {
         id: 13,
         nombre: "Vestido Cafe",
-        precio: 250,
+        precio: 200,
         categoria: "vestidos",
         imagen: "./img/v10.jpg",
         descripcion: "Vestido cafe semi nuevo.",
@@ -188,8 +188,13 @@ function abrirModal(item) {
     document.getElementById('modal-descripcion').textContent = item.descripcion;
     document.getElementById('modal-tallas').textContent = item.tallas;
 
-    // ✅ Aplicar estilo ESPECIAL solo al apatado de vestidos
-    if(item.id === 2){
+    // ✅ Aplicar estilo ESPECIAL
+    if(item.id === 1){
+        modalImg.style.width = '98%';
+        modalImg.style.height = '290px';
+        modalImg.style.zIndex = '10';
+        modalImg.style.marginLeft = '0%';
+    }else if(item.id === 2){
         modalImg.style.width = '60%';
         modalImg.style.height = '330px';
         modalImg.style.zIndex = '10';
@@ -200,15 +205,21 @@ function abrirModal(item) {
         modalImg.style.marginLeft = '20%';
         modalImg.style.zIndex = '10';
     }else if (item.id === 4) {
-        modalImg.style.width = '60%';
-        modalImg.style.height = '330px';
-        modalImg.style.marginLeft = '20%';
+        modalImg.style.width = '98%';
+        modalImg.style.height = '290px';
+        modalImg.style.marginLeft = '0%';
         modalImg.style.zIndex = '10';
     }
     else if (item.id === 5) {
         modalImg.style.width = '60%';
         modalImg.style.height = '330px';
         modalImg.style.marginLeft = '20%';
+        modalImg.style.zIndex = '10';
+    }
+    else if (item.id === 6) {
+        modalImg.style.width = '98%';
+        modalImg.style.height = '290px';
+        modalImg.style.marginLeft = '0%';
         modalImg.style.zIndex = '10';
     }
     else if (item.id === 7) {
